@@ -1,2 +1,2 @@
-# STUDY
+# Python STUDY
 my study room
