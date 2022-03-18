@@ -1,62 +1,15 @@
-- 최대공약수와 최소공배수 [백준 2609]
-    - 문제
-        
-        # 최대공약수와 최소공배수
-        
-        [제목 없음](https://www.notion.so/cbad4beefb8249f5b5f597c37c4fe479)
-        
-        ## 문제
-        
-        두 개의 자연수를 입력받아 최대 공약수와 최소 공배수를 출력하는 프로그램을 작성하시오.
-        
-        ## 입력
-        
-        첫째 줄에는 두 개의 자연수가 주어진다. 이 둘은 10,000이하의 자연수이며 사이에 한 칸의 공백이 주어진다.
-        
-        ## 출력
-        
-        첫째 줄에는 입력으로 주어진 두 수의 최대공약수를, 둘째 줄에는 입력으로 주어진 두 수의 최소 공배수를 출력한다.
-        
-        ## 예제 입력 1
-        
-        ```
-        24 18
-        
-        ```
-        
-        ## 예제 출력 1
-        
-        ```
-        6
-        72
-        ```
-        
-        ## 출처
-        
-        [Olympiad](https://www.acmicpc.net/category/2) > [한국정보올림피아드](https://www.acmicpc.net/category/55) > [한국정보올림피아드시․도지역본선](https://www.acmicpc.net/category/57) > [지역본선 2004](https://www.acmicpc.net/category/74) > [중등부](https://www.acmicpc.net/category/detail/380) 1번
-        
-        [Olympiad](https://www.acmicpc.net/category/2) > [한국정보올림피아드](https://www.acmicpc.net/category/55) > [한국정보올림피아드시․도지역본선](https://www.acmicpc.net/category/57) > [지역본선 2004](https://www.acmicpc.net/category/74) > [고등부](https://www.acmicpc.net/category/detail/381) 1번
-        
-        - 데이터를 추가한 사람: [circlecho](https://www.acmicpc.net/user/circlecho), [jsh587](https://www.acmicpc.net/user/jsh587)
-        
-        ## 알고리즘 분류
-        
-        - [수학](https://www.acmicpc.net/problem/tag/124)
-        - [정수론](https://www.acmicpc.net/problem/tag/95)
-        - [유클리드 호제법](https://www.acmicpc.net/problem/tag/26)
-    - 풀이
-        
-        ```python
-        import sys
-        
-        N, M = map(int, sys.stdin.readline().split())
-        
-        arr = []
-        
-        for i in range(1, N + 1):
-            if N % i == 0 and M % i == 0:
-                arr.append(i)
-        
-        print(max(arr))
-        print(N * M // max(arr))
-        ```
+import sys
+
+while True:
+    a, b, c = map(int, sys.stdin.readline().split())
+    if a == 0 and b == 0 and c == 0:
+        break
+
+    if c * c == a * a + b * b:
+        print("right")
+    elif b * b == a * a + c * c:
+        print("right")
+    elif a * a == c * c + b * b:
+        print("right")
+    else:
+        print("wrong")
