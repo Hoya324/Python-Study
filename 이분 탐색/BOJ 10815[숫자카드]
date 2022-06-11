@@ -1,0 +1,20 @@
+from sys import stdin
+
+N = int(input())
+user_card = list(map(int, stdin.readline().split()))
+M = int(input())
+check_card = list(map(int, stdin.readline().split()))
+
+check_list = {}
+
+for i in user_card:
+  check_list[i] = 1
+
+result=""
+for i in check_card:
+  if i in check_list:
+    result += "1 "
+  else:
+    result += "0 "
+
+print(result)
