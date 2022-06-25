@@ -1,5 +1,4 @@
 from sys import stdin
-
 n = int(stdin.readline())
 d = [0] * (n + 1)	
 # Botton-up
