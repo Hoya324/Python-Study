@@ -7,5 +7,3 @@ def solution(nums):
         answer = len(set_list)
 
     return answer
-
-    

@@ -10,4 +10,3 @@ def solution(phone_book):
             if temp in hash_map and temp != phone_number: # 본인을 제외한 접두사가 있는지 판단
                 answer = False
     return answer
-    
