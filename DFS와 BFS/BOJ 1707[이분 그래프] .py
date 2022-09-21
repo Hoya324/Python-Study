@@ -1,4 +1,3 @@
-```python
 from sys import stdin
 from collections import deque
 
@@ -44,4 +43,4 @@ for _ in range(t):
     visited = [0] * (v+1)
     visited[0] = 111
     print(bfs(graph, 1, visited))
-```
+
