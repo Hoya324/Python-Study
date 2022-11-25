@@ -7,3 +7,5 @@ for i in range(5):
 print(total//5)
 list.sort()
 print(list[2])
+
+
