@@ -9,4 +9,4 @@ for i in range(1, N+1):
 # for a, b in list(permutations(nPr, 2)):
 #     print(a, b)
 
-print("\n".join(list(map(" ".join, list(permutations(nPr, 2))))))
+print("\n".join(list(map(" ".join, list(permutations(nPr, M))))))
